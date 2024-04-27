@@ -1,6 +1,10 @@
 .container {
   max-width: 960px;
 }
+ main {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+ }
 
 .bd-placeholder-img {
   font-size: 1.125rem;
