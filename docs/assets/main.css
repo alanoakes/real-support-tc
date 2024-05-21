@@ -75,3 +75,92 @@
 .bd-mode-toggle .dropdown-menu .active .bi {
   display: block !important;
 }
+
+/*  Color Values for Etsy Transaction Coordinator
+https://www.etsy.com/listing/1698140007/transaction-coordinator-rack-card-canva?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=transaction+coordinator&ref=sr_gallery-1-2&sts=1&dd=1&content_source=95126a267a548d585ebbfd0fb9d14a82a030e074%253A1698140007&search_preloaded_img=1&organic_search_click=1
+*/
+:root {
+  --myclr-lightpink: #E1B7AE;
+  --myclr-pink: #E0DBDA;
+  --myclr-red: #E3074D;
+  --myclr-green: #789994;
+  --myclr-darkgreen: #7A7D6B;
+  --myclr-black: #201E1C;
+  --myclr-cream: #E0DBDA;
+  --myclr-darkcream: #F8EDEA;
+  --myclr-lightbrown: #C9B8A9;
+}
+
+/*  Google Font: ROBOTO
+    https://fonts.google.com/specimen/Roboto?preview.text=READY%20TO%20GROW%20YOUR%20BUSINESS%3F&preview.layout=grid */
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
