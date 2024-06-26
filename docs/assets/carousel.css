@@ -1,5 +1,8 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
+:root {
+  /* --bs-secondary-color: rgba(222, 226, 230, 0.5); */
+}
 /* Padding below the footer and lighter body text */
 
 body {
@@ -156,4 +159,69 @@ body {
 
 .bd-mode-toggle .dropdown-menu .active .bi {
   display: block !important;
+}
+
+/* about carrousel images */
+.carousel-item {
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.carousel-item:nth-of-type(1) {
+    background-image: url("images/about-carrousel/about-carrousel-1-unsplash.jpg");
+}
+
+.carousel-item:nth-of-type(2) {
+    background-image: url("images/about-carrousel/about-carrousel-2-unsplash.jpg");
+}
+
+.carousel-item:nth-of-type(3) {
+    background-image: url("images/about-carrousel/about-carrousel-3-unsplash.jpg");
+}
+
+#hdshot {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hdshot-1 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/headshots/jess.jpg")
+}
+
+#hdshot-2 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/headshots/whitney.jpg")
+}
+
+#hdshot-3 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/headshots/cozette.jpg")
+}
+
+#hdshot-4 {
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-position: right 0px top -20px;
+  background-size: cover;
+  background-image: url("images/headshots/marilyn.jpg")
+}
+
+#hdshot-5 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/headshots/isaac.jpg")
+}
+
+#hdshot-6 {
+  /* no image  */
 }

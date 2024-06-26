@@ -7,6 +7,14 @@
   user-select: none;
 }
 
+body {
+  /* background-color: #ded6d8; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* background-image: url("images/index-maria-ziegler-jJnZg7vBfMs-unsplash.jpg"); */
+}
+
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
