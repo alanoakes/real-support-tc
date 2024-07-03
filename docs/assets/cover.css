@@ -31,13 +31,15 @@ body {
  */
 
 .nav-masthead .nav-link {
-  color: rgba(255, 255, 255, .5);
+  color: black !important;
+  /* color: rgba(255, 255, 255, .5); */
   border-bottom: .25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
+  color: #c2255c !important;
+  border-bottom-color: #c2255c;
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -46,5 +48,42 @@ body {
 
 .nav-masthead .active {
   color: #fff;
-  border-bottom-color: #fff;
+  border-bottom-color: #c2255c;
+}
+
+.header-cursive {
+  font-family: "Oooh Baby", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5em !important;
+}
+
+#first-time-client-btn {
+  background-color: #ded6d8 !important;
+  font-weight: 400 !important;
+}
+
+#first-time-client-btn:hover {
+  background-color: #fff !important;
+  font-weight: 700 !important;
+}
+
+.hdr-1 {
+  font-size: 2em;
+  color: black;
+}
+.hdr-2 {
+  font-size: 2em;
+  color: #c2255c;
+}
+.hdr-3 {
+  font-size: 0.75em;
+  letter-spacing: 4px;
+  font-weight: lighter;
+}
+
+.hdr-4 {
+  letter-spacing: 4px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
