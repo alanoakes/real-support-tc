@@ -2,13 +2,14 @@
 -------------------------------------------------- */
 :root {
   /* --bs-secondary-color: rgba(222, 226, 230, 0.5); */
+  --bs-secondary-color: rgba(182, 168, 159, 0.75);
 }
 /* Padding below the footer and lighter body text */
 
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: rgb(var(--bs-tertiary-color-rgb));
+  /* color: rgb(var(--bs-tertiary-color-rgb)); */
 }
 
 
@@ -224,4 +225,27 @@ body {
 
 #hdshot-6 {
   /* no image  */
+}
+.about-btn {
+    background-color: #f8edea;
+    color: black;
+}
+.about-btn:hover {
+    background-color: #f8edea;
+    color: black;
+    font-weight: 700;
+}
+
+.about-name, .about-title {
+  color: #8a8c80 !important;
+}
+
+.about-name {
+  font-weight: 700 !important;
+}
+.carousel-caption {
+    color: #f8edea !important;
+}
+.caro-btn {
+    background-color: #f8edea !important;
 }
