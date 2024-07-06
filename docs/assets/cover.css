@@ -61,6 +61,7 @@ body {
 #first-time-client-btn {
   background-color: #ded6d8 !important;
   font-weight: 400 !important;
+  border-radius: 30px;
 }
 
 #first-time-client-btn:hover {

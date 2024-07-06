@@ -229,6 +229,7 @@ body {
 .about-btn {
     background-color: #f8edea;
     color: black;
+    border-radius: 30px;
 }
 .about-btn:hover {
     background-color: #f8edea;
