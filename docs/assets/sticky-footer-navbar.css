@@ -106,3 +106,10 @@ main > .container {
 .nav-item {
   margin-right: 10px;
 }
+.navbar-brand {
+  color: black !important;
+}
+[data-bs-theme="dark"] .navbar-toggler-icon {
+  /* --bs-navbar-toggler-icon-bg: ''; */
+  color: black !important;
+}
