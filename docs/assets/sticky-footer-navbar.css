@@ -141,11 +141,3 @@ nav {
 div#navbarCollapse.show {
   margin-top: 75px !important;
 }
-
-#navbarCollapse {
-  /*
-  position: relative;
-  float: right;
-  margin-left: 100px;
-  */
-}
