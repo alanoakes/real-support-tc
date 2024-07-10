@@ -46,20 +46,25 @@
     </style>
   </head>
 
-  <body class="d-flex flex-column h-100 roboto-regular">
+  <body class="d-flex flex-column h-100 roboto-thin">
 
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md fixed-top roboto-regular">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="docs/assets/images/logo/RealSupportLogo.png" width="48" height="48"/>
+          <a class="navbar-brand" href="index.html">
+            <svg id="navbar-brand-svg" class="bd-placeholder-img rounded-circle hdshot" fill="#f8edea" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%"/>
+            </svg>
+            <img id="navbar-brand-img" src="docs/assets/images/logo/RealSupportLogo_nobg.png"/>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+          <!-- <div class="collapse navbar-collapse" id="navbarCollapse"> -->
+            <ul class="navbar-nav ml-auto mb-2 mb-md-0">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>

@@ -233,6 +233,7 @@ body {
     background-color: #f8edea;
     color: black;
     border-radius: 30px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .about-btn:hover {
     background-color: #f8edea;
@@ -244,11 +245,16 @@ body {
   color: #8a8c80 !important;
 }
 
+.about-title {
+  font-weight: bolder;
+}
+
 .about-name {
   font-weight: 700 !important;
 }
 .carousel-caption {
     color: #f8edea !important;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 .caro-btn {
     background-color: #f8edea !important;
