@@ -2,7 +2,7 @@
 -------------------------------------------------- */
 :root {
   /* --bs-secondary-color: rgba(222, 226, 230, 0.5); */
-  --bs-secondary-color: rgba(182, 168, 159, 0.75);
+  --bs-secondary-color: rgba(182, 168, 159, 0.5);
 }
 /* Padding below the footer and lighter body text */
 
@@ -224,7 +224,10 @@ body {
 }
 
 #hdshot-6 {
-  /* no image  */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/headshots/jillian.jpg")
 }
 .about-btn {
     background-color: #f8edea;
