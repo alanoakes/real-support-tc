@@ -20,36 +20,48 @@
     <link href="docs/assets/main.css" rel="stylesheet">
     <link href="docs/assets/sticky-footer-navbar.css" rel="stylesheet">
     <link href="docs/assets/checkout.css" rel="stylesheet">
+
+    <style>
+      body {
+        background-color: #ded6d8 !important;
+        color: #2e3440 !important;
+      }
+    </style>
   </head>
 
   <body class="d-flex flex-column h-100">
 
     <header>
       <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-md fixed-top roboto-regular">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="docs/assets/images/logo/RealSupportLogo.png" width="48" height="48"/>
+          <a class="navbar-brand" href="index.html">
+            <svg id="navbar-brand-svg" class="bd-placeholder-img rounded-circle hdshot" fill="#f8edea" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%"/>
+            </svg>
+            <img id="navbar-brand-img" src="docs/assets/images/logo/RealSupportLogo_nobg.png"/>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+          <!-- <div class="collapse navbar-collapse" id="navbarCollapse"> -->
+            <ul class="navbar-nav ml-auto mb-2 mb-md-0">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" aria-current="page" href="about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="services.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="transaction.html">Transaction</a>
+                <a class="nav-link active" href="transaction.html">Transaction</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="listing.html">Listing</a>
+                <a class="nav-link" href="listing.html">Listing</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="testimonials.html">Leave Review</a>
@@ -65,55 +77,122 @@
       <main class="flex-shrink-0">
         <!-- py-5 text-center -->
         <div id="transaction-info" class="col-md-7 col-lg-8 py-5">
-          <img class="d-block mx-auto mb-4" src="docs/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-          <h2>Transaction Submission</h2>
+          <!-- <img class="d-block mx-auto mb-4" src="docs/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+          <h2 style="margin-top: 40px;">Transaction Submission</h2>
           <p class="lead">
             Submit this form within 24 hours of receiving a signed Listing
             Agreement for maximum leverage and the smoothest transition. Make
             sure your signed Listing Agreement is uploaded in your Dotloop,
             Transaction Desk or Docusign account when you submit, and then let
-            us handle the rest! Please note that listings with live dates less
-            than 24 hours from submission may be subject to an additional rush
-            fee. NOTE: We are not accepting new clients for MLS input at this
-            time.
+            us handle the rest!
           </p>
         </div>
 
+        <br />
+
         <div class="row g-5">
           <div class="col-md-7 col-lg-8">
-            <h4 class="mb-3">Your Name</h4>
+            <h4 class="mb-3">Your Information</h4>
             <form class="needs-validation" novalidate>
               <div class="row g-3">
                 <div class="col-sm-6">
-                  <!-- <label for="firstName" class="form-label">First name</label> -->
-                  <input type="text" class="form-control" id="firstName" placeholder="First" value="" required>
+                  <label for="UserName" class="form-label">First & Last Name</label>
+                  <input type="text" class="form-control" id="UserName" placeholder="" value="" required>
                   <div class="invalid-feedback">
-                    Valid first name is required.
+                    Your name is required.
                   </div>
                 </div>
 
                 <div class="col-sm-6">
-                  <!-- <label for="lastName" class="form-label">Last name</label> -->
-                  <input type="text" class="form-control" id="lastName" placeholder="Last" value="" required>
+                  <label for="PhoneNumber" class="form-label">Phone Number</label>
+                  <input type="text" class="form-control" id="UserPhone" placeholder="123-45-6789" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                   <div class="invalid-feedback">
-                    Valid last name is required.
+                    A valid phone number is required.
                   </div>
                 </div>
 
                 <div class="col-12">
-                  <label for="email" class="form-label">Email <span class="text-body-secondary">(For Confirmation Notifications)</span></label>
+                  <label for="email" class="form-label">Email</label>
                   <input type="email" class="form-control" id="email" placeholder="you@example.com">
                   <div class="invalid-feedback">
-                    Please enter a valid email address for shipping updates.
+                    Please enter a valid email address
                   </div>
                 </div>
 
+                <hr class="my-4">
+                <br /><br />
+
+                <h4 class="mb-3">Service Type</h4>
+                <div class="col-md-6">
+                  <label for="SelectService" class="form-label">Select A Service</label>
+                  <select class="form-select" id="SelectService" required>
+                    <option value="">Choose...</option>
+                    <option>($199) Compliance Only</option>
+                    <option>($399) Full Service</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid service
+                  </div>
+                </div>
+
+                <hr class="my-4">
+                <br /><br />
+
+                <h4 class="mb-3">Service Info</h4>
+                <div class="col-md-6">
+                  <label for="SelectTC" class="form-label">Select A Transaction Coordinator</label>
+                  <select class="form-select" id="SelectTC" required>
+                    <option value="">Choose...</option>
+                    <option>Whitney Bailey</option>
+                    <option>Cozette Wallace</option>
+                    <option>Marilyn Dates</option>
+                    <option>Isaac Herman</option>
+                    <option>Jillian Sandifer</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid service
+                  </div>
+                </div>
+
+                <br /><br />
+
+              <h5 class="mb-3">Who do you represent, Buyer or Seller?</h5>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" >
+                <label class="form-check-label" for="inlineCheckbox1">Buyer</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" >
+                <label class="form-check-label" for="inlineCheckbox2">Seller</label>
+              </div>
+              <br /><br />
+
+              <h5 class="mb-3">Enter the Binding and Closing Date</h5>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="BindingDate" class="form-label">Binding Date</label>
+                  <input type="text" class="form-control" id="BindingDate" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    A valid date is required.
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="ClosingDate" class="form-label">Closing Date</label>
+                  <input type="text" class="form-control" id="ClosingDate" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    A valid date is required.
+                  </div>
+                </div>
+              </div>
+
+                <!--
                 <div class="col-12">
                   <h4 class="mb-3">Property Address</h4>
                   <label for="address" class="form-label">Address</label>
                   <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
                   <div class="invalid-feedback">
-                    Please enter your shipping address.
+                    Please enter your address.
                   </div>
                 </div>
 
@@ -149,9 +228,7 @@
                   </div>
                 </div>
               </div>
-              <hr class="my-4">
-              <br />
-
+                -->
               <h5 class="mb-3">Has this property been listed on the MLS before?</h5>
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked required>
