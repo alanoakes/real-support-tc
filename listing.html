@@ -48,6 +48,13 @@
         border-color: #97998c;
         box-shadow: 0 0 0 0.25rem rgb(151 153 140 / 50%);
       }
+      #book-consultation {
+        background-color: #ad998f !important;
+      }
+      #book-consultation > a {
+        color: white !important;
+        text-decoration: none;
+      }
     </style>
   </head>
 
@@ -132,8 +139,15 @@
 
 
 
-              <hr class="my-4" hidden>
-              <button id="submit-transaction" class="w-100 btn btn-lg" type="submit" hidden>
+              <!-- Visible if selected NO  -->
+              <button id="book-consultation" class="w-100 btn btn-lg" type="submit">
+                <a href="https://calendly.com/jessikageorge">
+                  Book Consulation
+                </a>
+              </button>
+              <!-- Visible if selected YES  -->
+              <hr class="my-4" hidden="true">
+              <button id="submit-transaction" class="w-100 btn btn-lg" type="submit" hidden="true">
                 Submit Listing
               </button>
 
@@ -154,6 +168,7 @@
       </div>
     </footer>
         <script src="docs/assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="docs/assets/js/jquery-3.7.1.min.js"></script>
         <script src="docs/assets/main.js"></script>
     </body>
 </html>

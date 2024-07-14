@@ -2,6 +2,7 @@
 window.addEventListener('load', function () {
     console.log('page loaded');
     updateDateYear();
+    hideBtnConsulation();
 });
 
 
@@ -12,46 +13,33 @@ function updateDateYear() {
     document.querySelector('#copyrt').textContent = year;
 }
 
-// multiline svg quotes
-function svg_textMultiline() {
+// this function determines listing whether to show or hide the form
+var ckbxYes = document.getElementById("rsts-yes");
+var ckbxNo = document.getElementById("rsts-no");
+// var btnNO = document.getElementById("book-consultation");
 
-  var x = 125;
-  var y = 20;
-  var width = 250;
-  var lineHeight = 20;
-
-  /* get the text */
-  var element = document.getElementById('test');
-  var text = element.innerHTML;
-
-  /* split the words into array */
-  var words = text.split(' ');
-  var line = '';
-
-  /* Make a tspan for testing */
-  element.innerHTML = '<tspan id="PROCESSING">busy</tspan >';
-
-  for (var n = 0; n < words.length; n++) {
-    var testLine = line + words[n] + ' ';
-    var testElem = document.getElementById('PROCESSING');
-    /*  Add line in testElement */
-    testElem.innerHTML = testLine;
-    /* Messure textElement */
-    var metrics = testElem.getBoundingClientRect();
-    testWidth = metrics.width;
-
-    if (testWidth > width && n > 0) {
-      element.innerHTML += '<tspan x=' + x + ' dy="' + y + '">' + line + '</tspan>';
-      line = words[n] + ' ';
-    } else {
-      line = testLine;
-    }
+function hideBtnConsulation() {
+  if (ckbxNo.checked === false) {
+    $("#book-consultation").hide();
   }
-
-  element.innerHTML += '<tspan x=' + x + ' dy="' + y + '">' + line + '</tspan>';
-  document.getElementById("PROCESSING").remove();
-
 }
 
+// if checked no, book a consultation
+ckbxNo.addEventListener('change', function() {
+  if (this.checked) {
+    console.log("Checkbox is checked..");
+    $("#book-consultation").show(1000);
+  } else {
+    console.log("Checkbox is not checked..");
+    $("#book-consultation").hide(1000);
+  }
+});
 
-svg_textMultiline();
+// if checked yes, show form
+ckbxYes.addEventListener('change', function() {
+  if (this.checked) {
+    console.log("Checkbox is checked..");
+  } else {
+    console.log("Checkbox is not checked..");
+  }
+});
