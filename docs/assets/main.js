@@ -34,10 +34,10 @@ function hideBtnForm() {
 // if checked no, book a consultation
 ckbxNo.addEventListener('change', function() {
   if (this.checked) {
-    console.log("Checkbox is checked..");
+    // console.log("Checkbox is checked..");
     $("#book-consultation").show(1000);
   } else {
-    console.log("Checkbox is not checked..");
+    // console.log("Checkbox is not checked..");
     $("#book-consultation").hide(1000);
   }
 });
@@ -46,10 +46,10 @@ ckbxNo.addEventListener('change', function() {
 // if checked yes, show form
 ckbxYes.addEventListener('change', function() {
   if (this.checked) {
-    console.log("Checkbox is checked..");
+    // console.log("Checkbox is checked..");
     $(".rstsYES").show(1000);
   } else {
-    console.log("Checkbox is not checked..");
+    // console.log("Checkbox is not checked..");
     $(".rstsYES").hide(1000);
   }
 });
