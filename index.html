@@ -79,15 +79,30 @@
             <button type="button" class="btn btn-outline-primary">Schedule Consultation</button>
           </div>
           -->
-          <a id="first-time-client-btn1" href="tel:901-451-4649" class="btn btn-lg btn-light fw-bold border-white bg-white roboto-thin">
+          <a id="first-time-client-btn1" onclick="showToast()" class="btn btn-lg btn-light fw-bold border-white bg-white roboto-thin">
             Call Jess
           </a>
-          <a id="first-time-client-btn2" href="https://calendly.com/jessikageorge" class="btn btn-lg btn-light fw-bold border-white bg-white roboto-thin">
+          <a id="first-time-client-btn2" href="https://calendly.com/jessikageorge" target="_blank" class="btn btn-lg btn-light fw-bold border-white bg-white roboto-thin">
             Schedule Consultation
           </a>
           <!--
           -->
         </p>
+
+        <!-- The actual snackbar -->
+        <div id="snackbar">Call Jess at <u>(901) 451-4649</u></div>
+        <script>
+          function showToast() {
+            // Get the snackbar DIV
+            var x = document.getElementById("snackbar");
+
+            // Add the "show" class to DIV
+            x.className = "show";
+
+            // After 3 seconds, remove the show class from DIV
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+          }
+        </script>
       </main>
 
       <footer class="mt-auto text-white-50">
