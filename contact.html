@@ -21,6 +21,9 @@
     <link href="docs/assets/sticky-footer-navbar.css" rel="stylesheet">
     <link href="docs/assets/checkout.css" rel="stylesheet">
 
+    <script>
+        var submitted = false;
+    </script>
     <style>
       body {
         background-color: white !important;
@@ -102,39 +105,38 @@
 
         <div class="row g-5 mt-5">
           <div class="col-md-7 col-lg-8">
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" novalidate
+                action="https://docs.google.com/forms/d/e/1FAIpQLSelvLID1r_2RDGM4MxBRNxrg-V7wMCtcfbzHN3NGtFVwWA2Lg/formResponse"
+                method="post"
+                target="hiddenConfirm"
+                onsubmit="submitted = true"
+            >
               <div class="row g-3">
 
                 <h4 class="mb-3 mt-4">Submit A Review</h4>
                 <hr class="my-2">
 
                 <div class="col-sm-6">
-                  <label for="UserName" class="form-label">First & Last Name</label>
-                  <input type="text" class="form-control" id="UserName" placeholder="" value="" required>
-                  <div class="invalid-feedback">
-                    Your name is required.
-                  </div>
+                  <label for="entry.102633410" class="form-label">First & Last Name</label>
+                  <input type="text" class="form-control" id="UserName" placeholder="" name="entry.102633410">
                 </div>
 
                 <div class="col-sm-6">
-                  <label for="PhoneNumber" class="form-label">Phone Number</label>
-                  <input type="text" class="form-control" id="UserPhone" placeholder="123-45-6789" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                  <div class="invalid-feedback">
-                    A valid phone number is required.
-                  </div>
+                  <label for="entry.676961602" class="form-label">Phone Number</label>
+                  <input type="text" class="form-control" id="UserPhone" placeholder="123-45-6789" name="entry.676961602" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 </div>
 
                 <div class="col-sm-8">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                  <label for="entry.2042492821" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com" name="entry.2042492821" required>
                   <div class="invalid-feedback">
                     Please enter a valid email address
                   </div>
                 </div>
 
                 <div class="col-sm-4 mt-3">
-                  <label for="lockboxType" class="form-label">Rating</label>
-                  <select class="form-select" id="lockboxType">
+                  <label for="entry.1267915710" class="form-label">Rating</label>
+                  <select class="form-select" id="lockboxType" name="entry.1267915710">
                     <option value="">5 Stars</option>
                     <option>4  Stars</option>
                     <option>3 Stars</option>
@@ -144,8 +146,8 @@
                 </div>
 
                 <div class="col-12 mt-5">
-                  <label for="other-info" class="form-label">Message</label>
-                  <textarea id="other-info" class="form-control" aria-label="With textarea"></textarea>
+                  <label for="entry.1346769798" class="form-label">Message</label>
+                  <textarea id="other-info" class="form-control" aria-label="With textarea" name="entry.1346769798"></textarea>
                 </div>
 
 
