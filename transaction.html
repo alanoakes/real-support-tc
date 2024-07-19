@@ -21,6 +21,9 @@
     <link href="docs/assets/sticky-footer-navbar.css" rel="stylesheet">
     <link href="docs/assets/checkout.css" rel="stylesheet">
 
+    <script>
+        var submitted = false;
+    </script>
     <style>
       body {
         background-color: white !important;
@@ -113,31 +116,36 @@
 
         <div class="row g-5">
           <div class="col-md-7 col-lg-8">
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" novalidate
+                action="https://docs.google.com/forms/d/e/1FAIpQLSchvp3E0Xj5-vahXyJCiuXlAaFfGWoDNOD_goWodJgNbQ1E-A/formResponse"
+                method="post"
+                target="hiddenConfirm"
+                onsubmit="submitted = true"
+            >
               <div class="row g-3">
 
                 <h4 class="mb-3 mt-4">Your Information</h4>
                 <hr class="my-2">
 
                 <div class="col-sm-6">
-                  <label for="UserName" class="form-label">First & Last Name</label>
-                  <input type="text" class="form-control" id="UserName" placeholder="" value="" required>
+                  <label for="entry.29510152" class="form-label">First & Last Name</label>
+                  <input type="text" class="form-control" id="UserName" placeholder="" name="entry.29510152" >
                   <div class="invalid-feedback">
                     Your name is required.
                   </div>
                 </div>
 
                 <div class="col-sm-6">
-                  <label for="PhoneNumber" class="form-label">Phone Number</label>
-                  <input type="text" class="form-control" id="UserPhone" placeholder="123-45-6789" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                  <label for="entry.2119952660" class="form-label">Phone Number</label>
+                  <input type="text" class="form-control" id="UserPhone" placeholder="123-45-6789" name="entry.2119952660" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                   <div class="invalid-feedback">
                     A valid phone number is required.
                   </div>
                 </div>
 
                 <div class="col-12">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                  <label for="entry.1398197934" class="form-label">Email</label>
+                  <input type="email" class="form-control" name="entry.1398197934" id="email" placeholder="you@example.com">
                   <div class="invalid-feedback">
                     Please enter a valid email address
                   </div>
@@ -147,8 +155,8 @@
                 <h4 class="mb-3 mt-5">Service Type</h4>
                 <hr class="my-2">
                 <div class="col-md-12">
-                  <label for="SelectService" class="form-label">Select A Service</label>
-                  <select class="form-select" id="SelectService" required>
+                  <label for="entry.1516556343" class="form-label">Select A Service</label>
+                  <select class="form-select" id="SelectService" name="entry.1516556343">
                     <option value="">Choose...</option>
                     <option>($199) Compliance Only</option>
                     <option>($399) Full Service</option>
@@ -162,8 +170,8 @@
                 <hr class="my-2">
                 <div class="col-md-12">
                   <!-- <h5 class="mb-3 mt-1">Select A Transaction Coordinator</h5> -->
-                  <label for="SelectTC" class="form-label">Select A Transaction Coordinator</label>
-                  <select class="form-select" id="SelectTC" required>
+                  <label for="entry.589658659" class="form-label">Select A Transaction Coordinator</label>
+                  <select class="form-select" id="SelectTC" name="entry.589658659">
                     <option value="">Choose...</option>
                     <option>Whitney Bailey</option>
                     <option>Cozette Wallace</option>
@@ -178,12 +186,12 @@
 
                   <h5 class="mb-3 mt-5">Who do you represent, Buyer or Seller?</h5>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" >
-                    <label class="form-check-label" for="inlineCheckbox1">Buyer</label>
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" name="entry.539269839" >
+                    <label class="form-check-label" for="entry.539269839">Buyer</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" >
-                    <label class="form-check-label" for="inlineCheckbox2">Seller</label>
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" name="entry.539269839" >
+                    <label class="form-check-label" for="entry.539269839">Seller</label>
                   </div>
 
 
