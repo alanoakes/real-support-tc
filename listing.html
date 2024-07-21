@@ -21,6 +21,9 @@
     <link href="docs/assets/sticky-footer-navbar.css" rel="stylesheet">
     <link href="docs/assets/checkout.css" rel="stylesheet">
 
+    <script>
+        var submitted = false;
+    </script>
     <style>
       body {
         background-color: white !important;
@@ -120,7 +123,12 @@
 
         <div class="row g-5">
           <div class="col-md-7 col-lg-8">
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" novalidate
+                action="https://docs.google.com/forms/d/e/1FAIpQLSfNpuFY3yYPrUM6BfbZqW_agNdlGhocsEMpwiu2IpM0SI5MCg/formResponse"
+                method="post"
+                target="hiddenConfirm"
+                onsubmit="submitted = true"
+            >
               <div class="row g-3">
                 <div class="col-md-12">
 
@@ -183,13 +191,13 @@
                     </table>
 
                     <div class="col-md-12">
-                      <label for="SelectService" class="form-label">Select A Service</label>
-                      <select class="form-select" id="SelectService" required>
+                      <label for="entry.312510832" class="form-label">Select A Service</label>
+                      <select class="form-select" id="SelectService" name="entry.312510832" required>
                         <option value="">Choose...</option>
-                        <option>MLS Input</option>
-                        <option>Listing Document and Compliance</option>
-                        <option>Prelisting Vendor Scheduling</option>
-                        <option>Listing Management</option>
+                        <option value="MLS Input">MLS Input</option>
+                        <option value="Listing Document and Compliance">Listing Document and Compliance</option>
+                        <option value="Prelisting Vendor Scheduling">Prelisting Vendor Scheduling</option>
+                        <option value="Listing Management">Listing Management</option>
                       </select>
                       <div class="invalid-feedback">
                         Please select a valid service
@@ -202,24 +210,24 @@
 
                     <div class="row g-3">
                       <div class="col-sm-6">
-                        <label for="UserName" class="form-label">First & Last Name</label>
-                        <input type="text" class="form-control" id="UserName" placeholder="" value="" required>
+                        <label for="entry.594120628" class="form-label">First & Last Name</label>
+                        <input type="text" class="form-control" id="UserName" placeholder="" name="entry.594120628" required>
                         <div class="invalid-feedback">
                           Your name is required.
                         </div>
                       </div>
 
                       <div class="col-sm-6">
-                        <label for="PhoneNumber" class="form-label">Phone Number</label>
-                        <input type="text" class="form-control" id="UserPhone" placeholder="123-45-6789" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <label for="entry.1310948913" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="UserPhone" placeholder="123-45-6789" name="entry.1310948913" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                         <div class="invalid-feedback">
                           A valid phone number is required.
                         </div>
                       </div>
 
                       <div class="col-12">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <label for="entry.588091616" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="entry.588091616" id="email" placeholder="you@example.com">
                         <div class="invalid-feedback">
                           Please enter a valid email address
                         </div>
@@ -232,24 +240,24 @@
 
                     <div class="row g-3">
                       <div class="col-sm-6">
-                        <label for="UserName" class="form-label">Broker Name</label>
-                        <input type="text" class="form-control" id="UserName" placeholder="" value="" required>
+                        <label for="entry.895560934" class="form-label">Broker Name</label>
+                        <input type="text" class="form-control" id="UserName" placeholder="" name="entry.895560934" required>
                         <div class="invalid-feedback">
                           Broker name is required.
                         </div>
                       </div>
 
                       <div class="col-sm-6">
-                        <label for="PhoneNumber" class="form-label">Phone Number</label>
-                        <input type="text" class="form-control" id="UserPhone" placeholder="123-45-6789" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <label for="entry.1678448671" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="UserPhone" placeholder="123-45-6789" name="entry.1678448671" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                         <div class="invalid-feedback">
                           A valid phone number is required.
                         </div>
                       </div>
 
                       <div class="col-12">
-                        <label for="email" class="form-label">Broker Name</label>
-                        <input type="email" class="form-control" id="email" placeholder="">
+                        <label for="entry.1059275673" class="form-label">Broker Email</label>
+                        <input type="email" class="form-control" id="email" name="entry.1059275673" placeholder="">
                         <div class="invalid-feedback">
                           Please enter a valid broker name
                         </div>
@@ -261,8 +269,8 @@
                     <h4 class="mb-3 mt-5">Property Information</h4>
                     <hr class="my-2">
                     <div class="col-12">
-                      <label for="email" class="form-label">Property Address</label>
-                      <input type="email" class="form-control" id="email" placeholder="">
+                      <label for="entry.75187952" class="form-label">Property Address</label>
+                      <input type="email" class="form-control" name="entry.75187952" id="email" placeholder="">
                       <div class="invalid-feedback">
                         Please enter a valid broker name
                       </div>
@@ -271,55 +279,55 @@
 
                     <h5 class="mb-3 mt-4">Has this property been listed in the MLS before?</h5>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="rsts-yes" value="option1" >
-                      <label class="form-check-label" for="rsts-yes">Yes</label>
+                      <input class="form-check-input" type="checkbox" id="rsts-yes" name="entry.1521961341" value="Yes" >
+                      <label class="form-check-label" for="entry.1521961341">Yes</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="rsts-no" value="option2" >
-                      <label class="form-check-label" for="rsts-no">No</label>
+                      <input class="form-check-input" type="checkbox" id="rsts-no" name="entry.1521961341" value="No" >
+                      <label class="form-check-label" for="entry.1521961341">No</label>
                     </div>
 
 
                     <div class="col-12 mt-4">
-                      <label for="email" class="form-label">If not previously listed in the MLS, do you have the room measurements?</label>
-                      <input type="email" class="form-control" id="email" placeholder="">
+                      <label for="entry.1740659260" class="form-label">If not previously listed in the MLS, do you have the room measurements?</label>
+                      <input type="email" class="form-control" id="email" name="entry.1740659260" placeholder="">
                     </div>
 
                     <h5 class="mb-3 mt-4">Is there an HOA?</h5>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="rsts-yes" value="option1" >
-                      <label class="form-check-label" for="rsts-yes">Yes</label>
+                      <input class="form-check-input" type="checkbox" id="rsts-yes" name="entry.572904667" value="Yes" >
+                      <label class="form-check-label" for="entry.572904667">Yes</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="rsts-no" value="option2" >
-                      <label class="form-check-label" for="rsts-no">No</label>
+                      <input class="form-check-input" type="checkbox" id="rsts-no" name="entry.572904667" value="No" >
+                      <label class="form-check-label" for="entry.572904667">No</label>
                     </div>
 
                     <div class="col-12 mt-4">
-                      <label for="email" class="form-label">Are there any upgrades to the property or specific information you would like to share?</label>
-                      <input type="email" class="form-control" id="email" placeholder="">
+                      <label for="entry.383081166" class="form-label">Are there any upgrades to the property or specific information you would like to share?</label>
+                      <input type="email" class="form-control" name="entry.383081166" id="email" placeholder="">
                     </div>
 
 
                     <h5 class="mb-3 mt-4">Vacant or Occupied?</h5>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="rsts-yes" value="option1" >
-                      <label class="form-check-label" for="rsts-yes">Vacant</label>
+                      <input class="form-check-input" type="checkbox" name="entry.1405255228" value="Vacant" >
+                      <label class="form-check-label" for="entry.1405255228">Vacant</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="rsts-no" value="option2" >
-                      <label class="form-check-label" for="rsts-no">Occupied</label>
+                      <input class="form-check-input" type="checkbox" name="entry.1405255228" value="Occupied" >
+                      <label class="form-check-label" for="entry.1405255228">Occupied</label>
                     </div>
 
 
                     <h5 class="mb-3 mt-4">Pets?</h5>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="rsts-yes" value="option1" >
-                      <label class="form-check-label" for="rsts-yes">Yes</label>
+                      <input class="form-check-input" type="checkbox" name="entry.1203504898" value="Yes" >
+                      <label class="form-check-label" for="entry.1203504898">Yes</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="rsts-no" value="option2" >
-                      <label class="form-check-label" for="rsts-no">No</label>
+                      <input class="form-check-input" type="checkbox" name="entry.1203504898" value="No" >
+                      <label class="form-check-label" for="entry.1203504898">No</label>
                     </div>
 
 
@@ -332,13 +340,13 @@
                   </div>
                   <div class="row g-3">
                     <div class="col-sm-4 mt-3">
-                      <label for="lockboxType" class="form-label">Type</label>
-                      <select class="form-select" id="lockboxType" required>
+                      <label for="entry.1707970944" class="form-label">Type</label>
+                      <select class="form-select" id="lockboxType" name="entry.1707970944" required>
                         <option value="">Choose...</option>
-                        <option>Sentry</option>
-                        <option>Supra</option>
-                        <option>Combo</option>
-                        <option>None</option>
+                        <option value="Sentry">Sentry</option>
+                        <option value="Supra">Supra</option>
+                        <option value="Combo">Combo</option>
+                        <option value="None">None</option>
                       </select>
                       <div class="invalid-feedback">
                         Please select a valid type
@@ -346,8 +354,8 @@
                     </div>
 
                     <div class="col-sm-8 mt-3">
-                      <label for="lockbox-combo-code" class="form-label">Combo Code</label>
-                      <input type="email" class="form-control" id="lockbox-combo-code" placeholder="">
+                      <label for="entry.239765833" class="form-label">Combo Code</label>
+                      <input type="text" name="entry.239765833" class="form-control" id="lockbox-combo-code" placeholder="">
                     </div>
 
                   </div>
@@ -355,48 +363,48 @@
 
                   <h5 class="mb-3 mt-4">Alarm?</h5>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="rsts-yes" value="option1" >
-                    <label class="form-check-label" for="rsts-yes">Yes</label>
+                    <input class="form-check-input" type="checkbox" name="entry.508812036" value="Yes" >
+                    <label class="form-check-label" for="entry.508812036">Yes</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="rsts-no" value="option2" >
-                    <label class="form-check-label" for="rsts-no">No</label>
+                    <input class="form-check-input" type="checkbox" name="entry.508812036" value="No" >
+                    <label class="form-check-label" for="entry.508812036">No</label>
                   </div>
 
 
                     <div class="col-12 mt-4">
-                      <label for="email" class="form-label">If there is an alarm, please enter the code:</label>
-                      <input type="email" class="form-control" id="email" placeholder="">
+                      <label for="entry.2033023858" class="form-label">If there is an alarm, please enter the code:</label>
+                      <input type="email" name="entry.2033023858" class="form-control" id="email" placeholder="">
                     </div>
 
 
                     <div class="col-sm-12 mt-5">
-                      <label for="ClosingDate" class="form-label">Date (weekday) you would like to go Live on MLs?</label>
-                      <input type="date" class="form-control" id="ClosingDate" placeholder="" value="" >
+                      <label for="entry.1291448511" class="form-label">Date (weekday) you would like to go Live on MLs?</label>
+                      <input type="date" class="form-control" id="ClosingDate" placeholder="" name="entry.1291448511" >
                     </div>
 
 
                   <h5 class="mb-3 mt-5">Client Information (1)</h5>
                   <div class="row g-3">
                     <div class="col-sm-6">
-                      <label for="client-name-1" class="form-label">First & Last Name</label>
-                      <input type="text" class="form-control" id="client-name-1" placeholder="" value="" required>
+                      <label for="entry.1608297004" class="form-label">First & Last Name</label>
+                      <input type="text" class="form-control" name="entry.1608297004" placeholder="" required>
                       <div class="invalid-feedback">
                         Your name is required.
                       </div>
                     </div>
 
                     <div class="col-sm-6">
-                      <label for="client-phone-1" class="form-label">Phone Number</label>
-                      <input type="text" class="form-control" id="client-phone-1" placeholder="123-45-6789" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                      <label for="entry.286292403" class="form-label">Phone Number</label>
+                      <input type="text" class="form-control" name="entry.286292403" placeholder="123-45-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                       <div class="invalid-feedback">
                         A valid phone number is required.
                       </div>
                     </div>
 
                     <div class="col-12">
-                      <label for="client-email-1" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="client-email-1" placeholder="you@example.com">
+                      <label for="entry.1024208683" class="form-label">Email</label>
+                      <input type="email" class="form-control" name="entry.1024208683" placeholder="you@example.com">
                       <div class="invalid-feedback">
                         Please enter a valid email address
                       </div>
@@ -407,24 +415,24 @@
                   <h5 class="mb-3 mt-5">Client Information (2)</h5>
                   <div class="row g-3">
                     <div class="col-sm-6">
-                      <label for="client-name-2" class="form-label">First & Last Name</label>
-                      <input type="text" class="form-control" id="client-name-2" placeholder="" value="" required>
+                      <label for="entry.1780787283" class="form-label">First & Last Name</label>
+                      <input type="text" class="form-control" name="entry.1780787283" placeholder="" required>
                       <div class="invalid-feedback">
                         Your name is required.
                       </div>
                     </div>
 
                     <div class="col-sm-6">
-                      <label for="client-phone-2" class="form-label">Phone Number</label>
-                      <input type="text" class="form-control" id="client-phone-2" placeholder="123-45-6789" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                      <label for="entry.1538758167" class="form-label">Phone Number</label>
+                      <input type="text" class="form-control" name="entry.1538758167" placeholder="123-45-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                       <div class="invalid-feedback">
                         A valid phone number is required.
                       </div>
                     </div>
 
                     <div class="col-12">
-                      <label for="client-email-2" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="client-email-2" placeholder="you@example.com">
+                      <label for="entry.1841677073" class="form-label">Email</label>
+                      <input type="email" class="form-control" name="entry.1841677073" placeholder="you@example.com">
                       <div class="invalid-feedback">
                         Please enter a valid email address
                       </div>
@@ -435,16 +443,16 @@
                   <h5 class="mb-3 mt-5">Commission Information</h5>
                   <div class="row g-3">
                     <div class="col-sm-6">
-                      <label for="client-name-2" class="form-label">Your Commission From Seller</label>
-                      <input type="text" class="form-control" id="client-name-2" placeholder="" value="" >
+                      <label for="entry.999294560" class="form-label">Your Commission From Seller</label>
+                      <input type="text" class="form-control" placeholder="" name="entry.999294560" >
                       <div class="invalid-feedback">
                         Your name is required.
                       </div>
                     </div>
 
                     <div class="col-sm-6">
-                      <label for="client-phone-2" class="form-label">Total Commission From Seller</label>
-                      <input type="text" class="form-control" id="client-phone-2" placeholder="" value="">
+                      <label for="entry.1923387176" class="form-label">Total Commission From Seller</label>
+                      <input type="text" class="form-control" name="entry.1923387176" placeholder="" >
                       <div class="invalid-feedback">
                         A valid phone number is required.
                       </div>
@@ -455,24 +463,24 @@
 
                   <h5 class="mb-3 mt-4">Referral?</h5>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="rsts-yes" value="option1" >
-                    <label class="form-check-label" for="rsts-yes">Yes</label>
+                    <input class="form-check-input" type="checkbox" name="entry.413198356" value="Yes" >
+                    <label class="form-check-label" for="entry.413198356">Yes</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="rsts-no" value="option2" >
-                    <label class="form-check-label" for="rsts-no">No</label>
+                    <input class="form-check-input" type="checkbox" name="entry.413198356" value="No" >
+                    <label class="form-check-label" for="entry.413198356">No</label>
                   </div>
 
 
                   <div class="col-12 mt-5">
-                    <label for="other-info" class="form-label">Showing Instructions</label>
-                    <textarea id="other-info" class="form-control" aria-label="With textarea"></textarea>
+                    <label for="entry.1015662730" class="form-label">Showing Instructions</label>
+                    <textarea name="entry.1015662730" class="form-control" aria-label="With textarea"></textarea>
                   </div>
 
 
                   <div class="col-12 mt-5">
-                    <label for="other-info" class="form-label">Anything Else We Need Know?</label>
-                    <textarea id="other-info" class="form-control" aria-label="With textarea"></textarea>
+                    <label for="entry.1571688349" class="form-label">Anything Else We Need Know?</label>
+                    <textarea name="entry.1571688349" class="form-control" aria-label="With textarea"></textarea>
                   </div>
 
 
