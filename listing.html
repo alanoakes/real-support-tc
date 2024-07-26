@@ -134,11 +134,11 @@
 
                   <h5 class="mb-3 mt-1">Have you ever used Real Support's Services before?</h5>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="rsts-yes" value="option1" >
+                    <input class="form-check-input" type="radio" id="rsts-yes" name="prev-rstc" onclick="listingYes()">
                     <label class="form-check-label" for="rsts-yes">Yes</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="rsts-no" value="option2" >
+                    <input class="form-check-input" type="radio" id="rsts-no" name="prev-rstc" onclick="listingNo()">
                     <label class="form-check-label" for="rsts-no">No</label>
                   </div>
 
@@ -279,11 +279,11 @@
 
                     <h5 class="mb-3 mt-4">Has this property been listed in the MLS before?</h5>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="rsts-yes" name="entry.1521961341" value="Yes" >
+                      <input class="form-check-input" type="radio" id="rsts-yes" name="entry.1521961341" value="Yes" >
                       <label class="form-check-label" for="entry.1521961341">Yes</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="rsts-no" name="entry.1521961341" value="No" >
+                      <input class="form-check-input" type="radio" id="rsts-no" name="entry.1521961341" value="No" >
                       <label class="form-check-label" for="entry.1521961341">No</label>
                     </div>
 
@@ -295,11 +295,11 @@
 
                     <h5 class="mb-3 mt-4">Is there an HOA?</h5>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="rsts-yes" name="entry.572904667" value="Yes" >
+                      <input class="form-check-input" type="radio" id="rsts-yes" name="entry.572904667" value="Yes" >
                       <label class="form-check-label" for="entry.572904667">Yes</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" id="rsts-no" name="entry.572904667" value="No" >
+                      <input class="form-check-input" type="radio" id="rsts-no" name="entry.572904667" value="No" >
                       <label class="form-check-label" for="entry.572904667">No</label>
                     </div>
 
@@ -311,22 +311,22 @@
 
                     <h5 class="mb-3 mt-4">Vacant or Occupied?</h5>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" name="entry.1405255228" value="Vacant" >
+                      <input class="form-check-input" type="radio" name="entry.1405255228" value="Vacant" >
                       <label class="form-check-label" for="entry.1405255228">Vacant</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" name="entry.1405255228" value="Occupied" >
+                      <input class="form-check-input" type="radio" name="entry.1405255228" value="Occupied" >
                       <label class="form-check-label" for="entry.1405255228">Occupied</label>
                     </div>
 
 
                     <h5 class="mb-3 mt-4">Pets?</h5>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" name="entry.1203504898" value="Yes" >
+                      <input class="form-check-input" type="radio" name="entry.1203504898" value="Yes" >
                       <label class="form-check-label" for="entry.1203504898">Yes</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" name="entry.1203504898" value="No" >
+                      <input class="form-check-input" type="radio" name="entry.1203504898" value="No" >
                       <label class="form-check-label" for="entry.1203504898">No</label>
                     </div>
 
@@ -363,11 +363,11 @@
 
                   <h5 class="mb-3 mt-4">Alarm?</h5>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="entry.508812036" value="Yes" >
+                    <input class="form-check-input" type="radio" name="entry.508812036" value="Yes" >
                     <label class="form-check-label" for="entry.508812036">Yes</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="entry.508812036" value="No" >
+                    <input class="form-check-input" type="radio" name="entry.508812036" value="No" >
                     <label class="form-check-label" for="entry.508812036">No</label>
                   </div>
 
@@ -463,11 +463,11 @@
 
                   <h5 class="mb-3 mt-4">Referral?</h5>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="entry.413198356" value="Yes" >
+                    <input class="form-check-input" type="radio" name="entry.413198356" value="Yes" >
                     <label class="form-check-label" for="entry.413198356">Yes</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="entry.413198356" value="No" >
+                    <input class="form-check-input" type="radio" name="entry.413198356" value="No" >
                     <label class="form-check-label" for="entry.413198356">No</label>
                   </div>
 
@@ -484,7 +484,6 @@
                   </div>
 
 
-
                 </div>
 
 
@@ -497,7 +496,10 @@
               </button>
               <!-- Visible if selected YES  -->
               <hr class="my-4 rstsYES">
-              <button id="submit-transaction" class="w-100 btn btn-lg rstsYES" type="submit">
+              <a id="submit-docs" class="w-100 btn btn-lg mt-5 rstsYES" role="button" href="mailto:Admin1@realsupporttc.com">
+                Submit Documents
+              </a>
+              <button id="submit-transaction" class="w-100 btn btn-lg mt-5 rstsYES" type="submit">
                 Submit Listing
               </button>
 

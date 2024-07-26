@@ -83,7 +83,7 @@
   display: block !important;
 }
 
-#submit-transaction {
+#submit-transaction, #submit-docs {
   background-color: #ad998f;
   color: white;
 }

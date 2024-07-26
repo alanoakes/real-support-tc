@@ -31,6 +31,24 @@ function hideBtnForm() {
   }
 }
 
+function listingYes() {
+  if (ckbxYes.checked) {
+    $(".rstsYES").show(1000);
+    $("#book-consultation").hide();
+  } else {
+    $(".rstsYES").hide(1000);
+  }
+}
+
+function listingNo() {
+  if (ckbxNo.checked) {
+    $("#book-consultation").show(1000);
+    $(".rstsYES").hide();
+  } else {
+    $("#book-consultation").hide(1000);
+  }
+}
+
 // if checked no, book a consultation
 ckbxNo.addEventListener('change', function() {
   if (this.checked) {
