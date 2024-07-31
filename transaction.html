@@ -149,23 +149,25 @@
                     <h4 class="mb-3 mt-4">Your Information</h4>
                     <hr class="my-2">
 
-                    <div class="col-sm-6">
-                      <label for="entry.29510152" class="form-label">First & Last Name</label>
-                      <input type="text" class="form-control" id="UserName" placeholder="" name="entry.29510152" >
-                      <div class="invalid-feedback">
-                        Your name is required.
-                      </div>
+                    <div class="row g-3">
+                        <div class="col-sm-6 mt-5">
+                          <label for="entry.29510152" class="form-label">First & Last Name</label>
+                          <input type="text" class="form-control" id="UserName" placeholder="" name="entry.29510152" >
+                          <div class="invalid-feedback">
+                            Your name is required.
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6 mt-5">
+                          <label for="entry.2119952660" class="form-label">Phone Number</label>
+                          <input type="text" class="form-control" id="UserPhone" placeholder="123-45-6789" name="entry.2119952660" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                          <div class="invalid-feedback">
+                            A valid phone number is required.
+                          </div>
+                        </div>
                     </div>
 
-                    <div class="col-sm-6">
-                      <label for="entry.2119952660" class="form-label">Phone Number</label>
-                      <input type="text" class="form-control" id="UserPhone" placeholder="123-45-6789" name="entry.2119952660" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                      <div class="invalid-feedback">
-                        A valid phone number is required.
-                      </div>
-                    </div>
-
-                    <div class="col-12">
+                    <div class="col-12 mt-5">
                       <label for="entry.1398197934" class="form-label">Email</label>
                       <input type="email" class="form-control" name="entry.1398197934" id="email" placeholder="you@example.com">
                       <div class="invalid-feedback">
@@ -276,6 +278,7 @@
                           <input type="email" class="form-control" id="lockbox-combo-code" name="entry.540654147" placeholder="">
                         </div>
 
+
                       </div>
 
 
@@ -385,6 +388,31 @@
                         <label class="form-check-label" for="entry.628258619">No</label>
                       </div>
 
+
+                      <h5 class="mb-3 mt-5">Would you like Real Support to schedule the inspections?</h5>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="" id="referral-yes" value="Yes" >
+                        <label class="form-check-label" for="">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="referral-no" name="" value="No" >
+                        <label class="form-check-label" for="">No</label>
+                      </div>
+
+                      <div class="col-12 mt-5">
+                        <label for="" class="form-label">If yes, which inspection would you like us to schedule?</label>
+                        <input type="email" class="form-control" id="lockbox-combo-code" name="" placeholder="">
+                      </div>
+
+                      <div class="col-12 mt-5">
+                        <label for="" class="form-label">Who is the lender?</label>
+                        <input type="email" class="form-control" id="lockbox-combo-code" name="" placeholder="">
+                      </div>
+
+                      <div class="col-12 mt-5">
+                        <label for="" class="form-label">Do you have preferred vendors?</label>
+                        <input type="email" class="form-control" id="lockbox-combo-code" name="" placeholder="">
+                      </div>
 
                     <div class="col-12 mt-5">
                       <label for="entry.1269648795" class="form-label">Anything Special We Need Know?</label>
