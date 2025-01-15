@@ -154,3 +154,16 @@ body {
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }
+
+#follow-us-svg {
+  width: 25px;
+  height: 25px;
+}
+
+.follow-us-icon {
+  fill: black;
+}
+.follow-us-icon:hover {
+  fill: #c2255c;
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
