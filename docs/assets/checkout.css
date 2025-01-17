@@ -83,7 +83,15 @@
   display: block !important;
 }
 
-#submit-transaction, #submit-docs {
+#submit-transaction, #submit-docs #mc-embedded-subscribe {
   background-color: #ad998f;
   color: white;
+}
+
+input#mc-embedded-subscribe.button {
+  background-color: #ad998f !important;
+  color: white !important;
+  /* height: 30px !important; */
+  /* padding: 8px 16px !important; */
+  /* margin: 0px 6px !important; */
 }
