@@ -196,9 +196,10 @@ body {
 
 #hdshot-2 {
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
+  background-position: right 0px top 3px;
   background-size: cover;
-  background-image: url("images/headshots/whitney.jpg")
+  background-image: url("images/headshots/elyssa.jpg")
 }
 
 #hdshot-3 {
@@ -220,7 +221,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("images/headshots/isaac.jpg")
+  background-image: url("images/headshots/whitney.jpg")
 }
 
 #hdshot-6 {
